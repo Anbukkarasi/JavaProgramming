@@ -5,15 +5,26 @@ class Main {
     Scanner s = new Scanner(System.in);
     //str = s.nextLine();
     int n,k;
+    boolean flag = false;
     n = s.nextInt();
     k = s.nextInt();
    
     for(int i=n;i<k;i++)
     {
-      if(i%2 == 0)
+      for(int j=2;j<i;j++)
+    {
+      if(i%j == 0)
       {
-        System.out.println(i);
+        flag = true;        
+        break;
       }
     }
+    if(!flag)
+    {
+      System.out.println(i);
+    }
+    flag = false;
+    }
+    
  }
 }
