@@ -10,18 +10,17 @@ class Main {
     {
       a[i] = s.nextInt();
     }
-    int x = n/2 - 1;
+    int v = n/2 - 1;
     if(n%2==0)
     {
-      double k =Math.ceil(( a[x] + a[x+1])/2);
+      double k =Math.ceil(( a[v] + a[v+1])/2);
       System.out.println(k);
     }
     else{
-      x = n/2;
-      System.out.println(a[x]);
+      v = n/2;
+      System.out.println(a[v]);
     }
    
     
   }
 }
-
